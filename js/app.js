@@ -477,6 +477,9 @@ if (supportForm) {
 // ---------- 3D Tilt Effect ----------
 
 function setupTiltEffect() {
+  // Disable on touch devices to prevent "sticking"
+  if (window.matchMedia("(pointer: coarse)").matches) return;
+
   const panels = document.querySelectorAll(".glass-panel");
 
   panels.forEach((panel) => {
