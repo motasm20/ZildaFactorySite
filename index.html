@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>ZILDA Factory – Idle Factory Tycoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ZILDA Factory is a fast-paced idle factory tycoon game. Build machines, automate production and climb the global leaderboard." />
+  <meta name="description"
+    content="ZILDA Factory is a fast-paced idle factory tycoon game. Build machines, automate production and climb the global leaderboard." />
   <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="js/app.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -36,10 +39,11 @@
           <span class="badge" data-i18n="hero.badgeOffline">Offline Progress</span>
           <span class="badge" data-i18n="hero.badgeFair">No Pay-to-Win</span>
         </div>
-        
+
         <h1 data-bind="text: gameTitle">ZILDA Factory</h1>
         <p class="tagline" data-bind="text: gameTagline" data-i18n="hero.tagline">Build. Automate. Dominate.</p>
-        <p data-bind="text: gameShortDescription" data-i18n="hero.shortDescription" style="margin-bottom: 2rem; max-width: 500px;">
+        <p data-bind="text: gameShortDescription" data-i18n="hero.shortDescription"
+          style="margin-bottom: 2rem; max-width: 500px;">
           The ultimate factory simulation. Scale your production to infinity and compete globally.
         </p>
 
@@ -84,7 +88,8 @@
       <div class="reveal">
         <h2 data-i18n="features.title">Engineered for Depth</h2>
         <p style="max-width: 600px; margin-bottom: 3rem;" data-i18n="features.lead">
-          Forget shallow clickers. ZILDA Factory offers deep strategic layers, complex optimization, and rewarding progression.
+          Forget shallow clickers. ZILDA Factory offers deep strategic layers, complex optimization, and rewarding
+          progression.
         </p>
       </div>
 
@@ -101,9 +106,10 @@
         <div class="reveal">
           <h2 data-i18n="progression.title">Infinite Scalability</h2>
           <p style="margin-bottom: 1.5rem;" data-i18n="progression.lead">
-            Costs grow super-exponentially. Every decision matters. Time your boosts, optimize your layout, and prestige to unlock massive multipliers.
+            Costs grow super-exponentially. Every decision matters. Time your boosts, optimize your layout, and prestige
+            to unlock massive multipliers.
           </p>
-          
+
           <div class="glass-panel" style="margin-top: 2rem;">
             <h3 data-i18n="progression.leaderboardsTitle">Global Leaderboards</h3>
             <p data-i18n="progression.leaderboardsText">
@@ -111,7 +117,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="reveal" style="display: grid; gap: 1.5rem;">
           <div class="glass-panel">
             <h3 data-i18n="progression.smartTitle">Smart Balancing</h3>
@@ -164,13 +170,18 @@
   </footer>
 
   <!-- Video Modal -->
-  <div class="modal hidden" id="videoModal" aria-hidden="true" style="display: none; position: fixed; inset: 0; z-index: 200; align-items: center; justify-content: center;">
-    <div class="modal-backdrop" data-action="closeModal" style="position: absolute; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px);"></div>
-    <div class="modal-dialog" style="position: relative; width: 90%; max-width: 800px; aspect-ratio: 16/9; background: #000; border: 1px solid var(--primary);">
-      <button class="icon-btn modal-close" data-action="closeModal" style="position: absolute; top: -40px; right: 0; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer;">✕</button>
+  <div class="modal hidden" id="videoModal" aria-hidden="true"
+    style="display: none; position: fixed; inset: 0; z-index: 200; align-items: center; justify-content: center;">
+    <div class="modal-backdrop" data-action="closeModal"
+      style="position: absolute; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px);"></div>
+    <div class="modal-dialog"
+      style="position: relative; width: 90%; max-width: 800px; aspect-ratio: 16/9; background: #000; border: 1px solid var(--primary);">
+      <button class="icon-btn modal-close" data-action="closeModal"
+        style="position: absolute; top: -40px; right: 0; background: none; border: none; color: #fff; font-size: 2rem; cursor: pointer;">✕</button>
       <div class="video-embed" id="videoEmbed" data-video-id="" style="width: 100%; height: 100%;"></div>
     </div>
   </div>
 
 </body>
+
 </html>

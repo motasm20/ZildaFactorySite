@@ -1,5 +1,107 @@
 // js/app.js
-import { GameViewModel, SupportViewModel } from "./viewModels.js";
+
+// ---------- Models ----------
+
+class GameInfoModel {
+  constructor() {
+    this.title = "ZILDA Factory";
+    this.tagline = "Build. Automate. Dominate.";
+    this.shortDescription =
+      "The ultimate factory simulation. Scale your production to infinity and compete globally.";
+    this.playStoreUrl = "#"; // later: officiële Play Store link
+    this.machineCount = 9;
+    this.clothingTierCount = 9;
+
+    this.screenshots = [
+      "media/screen1.png",
+      "media/screen2.png",
+      "media/screen3.png"
+    ];
+
+    this.features = [
+      {
+        title: "Balanced idle gameplay",
+        description:
+          "Super-exponential costs prevent early soft-caps. Your choices matter deep into late game."
+      },
+      {
+        title: "Shop & Research",
+        description:
+          "Use Fashion Points on permanent upgrades, cosmetics and powerful – but limited – time warps."
+      },
+      {
+        title: "Events & Contracts",
+        description:
+          "Limited time challenges that reward unique bonuses and skins for your machines."
+      },
+      {
+        title: "Online leaderboards",
+        description:
+          "Integrated with Google Play Games Services for scores, achievements and player IDs."
+      }
+    ];
+  }
+}
+
+class SupportModel {
+  constructor() {
+    this.supportEmail = "zildagames2025@gmail.com";
+  }
+}
+
+// ---------- ViewModels ----------
+
+class GameViewModel {
+  constructor() {
+    this.model = new GameInfoModel();
+  }
+
+  get gameTitle() {
+    return this.model.title;
+  }
+
+  get gameTagline() {
+    return this.model.tagline;
+  }
+
+  get gameShortDescription() {
+    return this.model.shortDescription;
+  }
+
+  get playStoreUrl() {
+    return this.model.playStoreUrl;
+  }
+
+  get machineCount() {
+    return this.model.machineCount;
+  }
+
+  get clothingTierCount() {
+    return this.model.clothingTierCount;
+  }
+
+  get screenshots() {
+    return this.model.screenshots;
+  }
+
+  get features() {
+    return this.model.features;
+  }
+}
+
+class SupportViewModel {
+  constructor() {
+    this.model = new SupportModel();
+  }
+
+  buildMailto({ email, device, type, message }) {
+    const subject = encodeURIComponent(`ZILDA Factory Support – ${type}`);
+    const body = encodeURIComponent(
+      `E-mail: ${email}\nDevice: ${device}\nType: ${type}\n\nDescription:\n${message}\n\n---\nSent from ZILDA Factory support page`
+    );
+    return `mailto:${this.model.supportEmail}?subject=${subject}&body=${body}`;
+  }
+}
 
 // ---------- Shared footer year ----------
 
@@ -377,4 +479,5 @@ if (supportForm) {
 setupLanguageSwitch();
 setupRevealOnScroll();
 setupTrailerModal();
+
 
