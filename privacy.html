@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>ZILDA Factory – Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="js/app.js" defer></script>
 </head>
+
 <body>
-  <header class="top-nav">
-    <div class="logo">ZILDA Factory</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html" class="active">Privacy</a>
-    </nav>
-  </header>
 
-  <main class="page">
-    <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: <span id="privacyDate">2025-02-01</span></p>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">ZILDA <span>FACTORY</span></div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="support.html" class="nav-link">Support</a>
+        <a href="privacy.html" class="nav-link active">Privacy</a>
+      </div>
+    </div>
+  </nav>
 
-    <h2>1. Who we are</h2>
-    <p>
-      ZILDA Factory is a mobile game developed by an independent developer based in the Netherlands.
-      In this policy “we”, “us” or “our” refers to the developer of ZILDA Factory.
-    </p>
+  <section class="section">
+    <div class="container">
+      <div class="glass-panel reveal active" style="max-width: 800px; margin: 0 auto;">
+        <h1 style="margin-bottom: 2rem;">Privacy Policy</h1>
+        <p class="muted" style="margin-bottom: 2rem;">Last updated: <span id="privacyDate">2025-02-01</span></p>
 
-    <h2>2. What data we collect</h2>
-    <ul>
-      <li><strong>Game progress data</strong> stored locally on your device.</li>
-      <li><strong>Anonymous analytics</strong> such as session length and screens used, to improve the game.</li>
-      <li><strong>Player ID</strong> from Google Play Games Services for leaderboards and achievements.</li>
-    </ul>
+        <div style="display: grid; gap: 2rem;">
+          <div>
+            <h3>1. Who we are</h3>
+            <p>
+              ZILDA Factory is a mobile game developed by an independent developer based in the Netherlands.
+              In this policy “we”, “us” or “our” refers to the developer of ZILDA Factory.
+            </p>
+          </div>
 
-    <h2>3. How we use your data</h2>
-    <ul>
-      <li>To save your progress and game settings.</li>
-      <li>To show leaderboards and achievements.</li>
-      <li>To detect crashes and fix bugs.</li>
-    </ul>
+          <div>
+            <h3>2. What data we collect</h3>
+            <ul style="padding-left: 1.5rem; color: var(--text-muted); margin-top: 0.5rem;">
+              <li><strong>Game progress data</strong> stored locally on your device.</li>
+              <li><strong>Anonymous analytics</strong> such as session length and screens used, to improve the game.
+              </li>
+              <li><strong>Player ID</strong> from Google Play Games Services for leaderboards and achievements.</li>
+            </ul>
+          </div>
 
-    <h2>4. Third-party services</h2>
-    <p>
-      ZILDA Factory may use Google Play Games Services, Google Play Billing and Firebase.
-      These services may collect data according to their own privacy policies.
-    </p>
+          <div>
+            <h3>3. How we use your data</h3>
+            <ul style="padding-left: 1.5rem; color: var(--text-muted); margin-top: 0.5rem;">
+              <li>To save your progress and game settings.</li>
+              <li>To show leaderboards and achievements.</li>
+              <li>To detect crashes and fix bugs.</li>
+            </ul>
+          </div>
 
-    <h2>5. Children</h2>
-    <p>
-      The game is not directed at children under 13. If you are under the minimum age in your country,
-      please ask a parent or guardian before playing.
-    </p>
+          <div>
+            <h3>4. Third-party services</h3>
+            <p>
+              ZILDA Factory may use Google Play Games Services, Google Play Billing and Firebase.
+              These services may collect data according to their own privacy policies.
+            </p>
+          </div>
 
-    <h2>6. Contact</h2>
-    <p>
-      For any questions about this policy, please contact us via the
-      <a href="support.html">support page</a>.
-    </p>
-  </main>
+          <div>
+            <h3>5. Children</h3>
+            <p>
+              The game is not directed at children under 13. If you are under the minimum age in your country,
+              please ask a parent or guardian before playing.
+            </p>
+          </div>
 
-  <footer class="site-footer">
-    <small>© <span id="year"></span> ZILDA Games</small>
+          <div>
+            <h3>6. Contact</h3>
+            <p>
+              For any questions about this policy, please contact us via the
+              <a href="support.html">support page</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo" style="font-size: 1.2rem;">ZILDA <span>FACTORY</span></div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <span style="color: var(--text-muted);">© <span id="year"></span> ZILDA Games</span>
+      </div>
+    </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+
 </body>
+
 </html>
-
-

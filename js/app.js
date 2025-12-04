@@ -21,9 +21,9 @@ const I18N = {
     "hero.badgeIdle": "Idle factory tycoon",
     "hero.badgeOffline": "Offline progress",
     "hero.badgeFair": "No pay‑to‑win",
-    "hero.tagline": "Idle factory tycoon with real long-term progression.",
+    "hero.tagline": "Build. Automate. Dominate.",
     "hero.shortDescription":
-      "Build 9 machines, unlock 9 clothing tiers, prestige with Fashion Points and compete on global leaderboards.",
+      "The ultimate factory simulation. Scale your production to infinity and compete globally.",
     "hero.designedFor": "Designed for long‑term idle players",
     "hero.playtimeLabel": "Playtime potential",
     "hero.playtimeValue": "100+ hours",
@@ -37,9 +37,9 @@ const I18N = {
     "hero.screenshotsLabel": "Actual in-game screenshots",
     "hero.note": "UI and balancing are still being tuned – feedback is welcome!",
 
-    "features.title": "Why you'll get addicted",
+    "features.title": "Engineered for Depth",
     "features.lead":
-      "ZILDA Factory is built for people who love deep idle games – not just 5 minutes of tapping. Plan, optimize and prestige for massive rewards.",
+      "Forget shallow clickers. ZILDA Factory offers deep strategic layers, complex optimization, and rewarding progression.",
 
     "steps.1.title": "Build your factory",
     "steps.1.text":
@@ -51,18 +51,18 @@ const I18N = {
     "steps.3.text":
       "Reset for huge permanent bonuses and race other players on the leaderboards.",
 
-    "progression.title": "Deep progression, not a 5-minute game",
+    "progression.title": "Infinite Scalability",
     "progression.lead":
-      "Costs grow super-exponential, and late‑game is all about timing your boosts, research and prestige loops. There is always another layer to unlock.",
+      "Costs grow super-exponentially. Every decision matters. Time your boosts, optimize your layout, and prestige to unlock massive multipliers.",
     "progression.smartTitle": "Smart balancing",
     "progression.smartText":
-      "Costs grow super-exponential. You won’t max everything in 5 minutes. Late-game focuses on planning and timing your boosts.",
-    "progression.researchTitle": "Research & Shop",
+      "Designed for long-term play. No hitting a wall in 2 days.",
+    "progression.researchTitle": "Deep Research",
     "progression.researchText":
-      "Spend Fashion Points on permanent upgrades, time warps and cosmetics. No pay-to-win: skill and planning still matter.",
-    "progression.leaderboardsTitle": "Leaderboards",
+      "Unlock permanent upgrades and specialized technologies.",
+    "progression.leaderboardsTitle": "Global Leaderboards",
     "progression.leaderboardsText":
-      "Firebase-powered online rankings. Compete on Fashion Points and see how your factory compares globally.",
+      "Compete with players worldwide. Real-time rankings powered by Firebase. Can you reach the top 1%?",
 
     "meta.playPaceTitle": "Play at your own pace",
     "meta.playPaceText":
@@ -75,21 +75,21 @@ const I18N = {
       "Your feedback directly shapes future updates, events and balancing tweaks.",
 
     "faq.title": "FAQ",
-    "faq.q1": "Is ZILDA Factory free?",
+    "faq.q1": "Is it free?",
     "faq.a1":
-      "Yes. The game is free to download. Optional in-game purchases are cosmetic or give small boosts.",
-    "faq.q2": "Do I need an internet connection?",
+      "Yes, 100% free to play. Optional cosmetics only.",
+    "faq.q2": "Offline play?",
     "faq.a2":
-      "You can play offline. Online connection is needed only for leaderboards and cloud save.",
+      "Yes, your factory runs 24/7 even when you're offline.",
     "faq.q3": "Is my progress saved?",
     "faq.a3":
       "The game saves automatically on your device. If you choose, cloud save can sync across devices.",
-    "faq.q4": "Is there any pay-to-win?",
+    "faq.q4": "Pay to win?",
     "faq.a4":
-      "There are optional boosts, but the core progression is balanced for fair play. Skill and smart planning matter more than spending.",
-    "faq.q5": "Which platforms are supported?",
+      "Never. Strategy always beats wallet.",
+    "faq.q5": "Platforms?",
     "faq.a5":
-      "Right now ZILDA Factory is being prepared for Google Play on Android. Other platforms may follow later."
+      "Android first. iOS coming soon."
   },
   nl: {
     "nav.logo": "ZILDA Factory",
@@ -103,9 +103,9 @@ const I18N = {
     "hero.badgeIdle": "Idle fabriek tycoon",
     "hero.badgeOffline": "Offline voortgang",
     "hero.badgeFair": "Geen pay‑to‑win",
-    "hero.tagline": "Idle fabrieksspel met échte lange‑termijn progressie.",
+    "hero.tagline": "Bouw. Automatiseer. Heers.",
     "hero.shortDescription":
-      "Bouw 9 machines, ontgrendel 9 kleding‑tiers, prestige met Fashion Points en klim op het wereldwijde leaderboard.",
+      "De ultieme fabriekssimulatie. Schaal je productie naar oneindig en concurreer wereldwijd.",
     "hero.designedFor": "Gemaakt voor spelers die van diepe idle games houden",
     "hero.playtimeLabel": "Speeltijd potentieel",
     "hero.playtimeValue": "100+ uur",
@@ -120,9 +120,9 @@ const I18N = {
     "hero.note":
       "UI en balans worden nog verder getuned – jouw feedback is super welkom!",
 
-    "features.title": "Waarom je blijft doorspelen",
+    "features.title": "Ontworpen voor Diepgang",
     "features.lead":
-      "ZILDA Factory is gemaakt voor mensen die houden van diepe idle games – niet alleen 5 minuten tikken. Plan, optimaliseer en prestige voor gigantische beloningen.",
+      "Vergeet oppervlakkige clickers. ZILDA Factory biedt diepe strategische lagen, complexe optimalisatie en belonende progressie.",
 
     "steps.1.title": "Bouw je fabriek",
     "steps.1.text":
@@ -134,18 +134,18 @@ const I18N = {
     "steps.3.text":
       "Reset voor enorme permanente bonussen en race tegen andere spelers op de leaderboards.",
 
-    "progression.title": "Diepe progressie, geen 5‑minuten spelletje",
+    "progression.title": "Oneindige Schaalbaarheid",
     "progression.lead":
-      "Kosten groeien super‑exponentieel en in de late game draait alles om het timen van boosts, research en prestige‑loops. Er is altijd nog een laag om vrij te spelen.",
+      "Kosten groeien super‑exponentieel. Elke beslissing telt. Time je boosts, optimaliseer je layout en prestige voor enorme multipliers.",
     "progression.smartTitle": "Slimme balans",
     "progression.smartText":
-      "Kosten stijgen super‑exponentieel. Je hebt niet alles in 5 minuten gemaxed. In de late game draait het om plannen en het timen van boosts.",
-    "progression.researchTitle": "Research & Shop",
+      "Ontworpen voor lange termijn. Geen muur na 2 dagen.",
+    "progression.researchTitle": "Diepe Research",
     "progression.researchText":
-      "Gebruik Fashion Points voor permanente upgrades, time warps en cosmetics. Geen pay‑to‑win: slimme keuzes blijven belangrijk.",
-    "progression.leaderboardsTitle": "Leaderboards",
+      "Ontgrendel permanente upgrades en gespecialiseerde technologieën.",
+    "progression.leaderboardsTitle": "Wereldwijde Leaderboards",
     "progression.leaderboardsText":
-      "Firebase‑powered online rankings. Vergelijk je fabriek wereldwijd op Fashion Points.",
+      "Concurreer met spelers wereldwijd. Real-time rankings via Firebase. Haal jij de top 1%?",
 
     "meta.playPaceTitle": "Speel in je eigen tempo",
     "meta.playPaceText":
@@ -158,21 +158,21 @@ const I18N = {
       "Jouw feedback bepaalt direct toekomstige updates, events en balans‑aanpassingen.",
 
     "faq.title": "FAQ",
-    "faq.q1": "Is ZILDA Factory gratis?",
+    "faq.q1": "Is het gratis?",
     "faq.a1":
-      "Ja. De game is gratis te downloaden. Optionele in‑game aankopen zijn cosmetisch of geven kleine boosts.",
-    "faq.q2": "Heb ik een internetverbinding nodig?",
+      "Ja, 100% gratis te spelen. Alleen optionele cosmetica.",
+    "faq.q2": "Offline spelen?",
     "faq.a2":
-      "Je kunt offline spelen. Internet is alleen nodig voor leaderboards en cloud saves.",
+      "Ja, je fabriek draait 24/7 door, ook als je offline bent.",
     "faq.q3": "Wordt mijn voortgang opgeslagen?",
     "faq.a3":
       "De game slaat automatisch op je apparaat op. Met cloud save kun je, als je dat kiest, tussen apparaten syncen.",
-    "faq.q4": "Is er pay‑to‑win?",
+    "faq.q4": "Pay to win?",
     "faq.a4":
-      "Er zijn optionele boosts, maar de kernprogressie is gebalanceerd voor eerlijke gameplay. Slimme keuzes zijn belangrijker dan geld uitgeven.",
-    "faq.q5": "Welke platformen worden ondersteund?",
+      "Nooit. Strategie wint altijd van de portemonnee.",
+    "faq.q5": "Platformen?",
     "faq.a5":
-      "ZILDA Factory wordt op dit moment voorbereid voor Google Play op Android. Andere platformen kunnen later volgen."
+      "Eerst Android. iOS volgt binnenkort."
   }
 };
 
@@ -204,7 +204,7 @@ function setupLanguageSwitch() {
   langSwitch
     .querySelectorAll(".lang-btn")
     .forEach((btn) =>
-      btn.classList.toggle("is-active", btn.dataset.lang === defaultLang)
+      btn.classList.toggle("active", btn.dataset.lang === defaultLang)
     );
 
   langSwitch.addEventListener("click", (e) => {
@@ -216,45 +216,16 @@ function setupLanguageSwitch() {
 
     langSwitch
       .querySelectorAll(".lang-btn")
-      .forEach((b) => b.classList.toggle("is-active", b === btn));
-  });
-}
-
-// ---------- Theme toggle ----------
-
-function applyTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  const toggle = document.getElementById("themeToggle");
-  if (toggle) {
-    toggle.textContent = theme === "light" ? "☀" : "☾";
-  }
-}
-
-function setupThemeToggle() {
-  const stored = localStorage.getItem("zilda_theme");
-  const prefersDark =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const initial = stored || (prefersDark ? "dark" : "dark");
-  applyTheme(initial);
-
-  const toggle = document.getElementById("themeToggle");
-  if (!toggle) return;
-
-  toggle.addEventListener("click", () => {
-    const current = document.documentElement.getAttribute("data-theme") || "dark";
-    const next = current === "dark" ? "light" : "dark";
-    localStorage.setItem("zilda_theme", next);
-    applyTheme(next);
+      .forEach((b) => b.classList.toggle("active", b === btn));
   });
 }
 
 // ---------- Scroll reveal ----------
 
 function setupRevealOnScroll() {
-  const elements = document.querySelectorAll(".reveal-on-scroll");
+  const elements = document.querySelectorAll(".reveal");
   if (!("IntersectionObserver" in window) || !elements.length) {
-    elements.forEach((el) => el.classList.add("is-visible"));
+    elements.forEach((el) => el.classList.add("active"));
     return;
   }
 
@@ -262,7 +233,7 @@ function setupRevealOnScroll() {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
+          entry.target.classList.add("active");
           observer.unobserve(entry.target);
         }
       });
@@ -318,7 +289,8 @@ function setupTrailerModal() {
 
 // ---------- INDEX: game landing page ----------
 
-const appRoot = document.getElementById("app");
+// Use document.body as root since we removed #app
+const appRoot = document.body;
 if (appRoot) {
   const vm = new GameViewModel();
 
@@ -349,6 +321,7 @@ if (appRoot) {
       const img = document.createElement("img");
       img.src = src;
       img.alt = `ZILDA Factory screenshot ${i + 1}`;
+      img.className = "screen-content"; // Add class for styling
       if (i !== 0) img.style.display = "none";
       carousel.appendChild(img);
     });
@@ -367,8 +340,8 @@ if (appRoot) {
   const featureList = document.getElementById("featureList");
   if (featureList) {
     vm.features.forEach((f) => {
-      const card = document.createElement("article");
-      card.className = "card";
+      const card = document.createElement("div");
+      card.className = "glass-panel"; // Updated class
       card.innerHTML = `<h3>${f.title}</h3><p>${f.description}</p>`;
       featureList.appendChild(card);
     });
@@ -402,6 +375,6 @@ if (supportForm) {
 // ---------- Init shared UI ----------
 
 setupLanguageSwitch();
-setupThemeToggle();
 setupRevealOnScroll();
 setupTrailerModal();
+
