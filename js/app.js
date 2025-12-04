@@ -474,10 +474,67 @@ if (supportForm) {
   });
 }
 
+// ---------- 3D Tilt Effect ----------
+
+function setupTiltEffect() {
+  const panels = document.querySelectorAll(".glass-panel");
+
+  panels.forEach((panel) => {
+    panel.addEventListener("mousemove", (e) => {
+      const rect = panel.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * -5; // Max 5deg rotation
+      const rotateY = ((x - centerX) / centerX) * 5;
+
+      panel.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+    });
+
+    panel.addEventListener("mouseleave", () => {
+      panel.style.transform = "perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)";
+    });
+  });
+}
+
+// ---------- Typing Effect ----------
+
+function setupTypingEffect() {
+  const tagline = document.querySelector('[data-bind="text: gameTagline"]');
+  if (!tagline) return;
+
+  const text = tagline.textContent;
+  tagline.textContent = "";
+  tagline.classList.add("typing-cursor");
+
+  let i = 0;
+  const speed = 50; // ms per char
+
+  function type() {
+    if (i < text.length) {
+      tagline.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    } else {
+      // Keep cursor blinking for a bit then remove? Or keep it forever.
+      // Let's keep it forever for that terminal feel.
+    }
+  }
+
+  // Start typing after a small delay
+  setTimeout(type, 500);
+}
+
 // ---------- Init shared UI ----------
 
 setupLanguageSwitch();
 setupRevealOnScroll();
 setupTrailerModal();
+setupTiltEffect();
+setupTypingEffect();
+
 
 
