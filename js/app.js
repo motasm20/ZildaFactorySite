@@ -191,7 +191,20 @@ const I18N = {
       "Never. Strategy always beats wallet.",
     "faq.q5": "Platforms?",
     "faq.a5":
-      "Android first. iOS coming soon."
+      "Android first. iOS coming soon.",
+
+    "support.title": "Support",
+    "support.intro": "Experiencing a bug, balance issue or payment problem? Use the form below – it opens your e-mail app with all info filled in.",
+    "support.emailLabel": "Your e-mail",
+    "support.deviceLabel": "Device & model",
+    "support.typeLabel": "Issue type",
+    "support.type.bug": "Bug / Crash",
+    "support.type.balance": "Balance / Progression",
+    "support.type.billing": "Billing / Purchase",
+    "support.type.suggestion": "Suggestion / Feedback",
+    "support.type.other": "Other",
+    "support.messageLabel": "Description",
+    "support.submit": "Send Support E-mail"
   },
   nl: {
     "nav.logo": "ZILDA Factory",
@@ -248,6 +261,19 @@ const I18N = {
     "progression.leaderboardsTitle": "Wereldwijde Leaderboards",
     "progression.leaderboardsText":
       "Concurreer met spelers wereldwijd. Real-time rankings via Firebase. Haal jij de top 1%?",
+
+    "support.title": "Ondersteuning",
+    "support.intro": "Heb je een bug, balansprobleem of betalingsprobleem? Gebruik het formulier hieronder – het opent je e-mail app met alle info ingevuld.",
+    "support.emailLabel": "Jouw e-mail",
+    "support.deviceLabel": "Toestel & model",
+    "support.typeLabel": "Type probleem",
+    "support.type.bug": "Bug / Crash",
+    "support.type.balance": "Balans / Progressie",
+    "support.type.billing": "Betaling / Aankoop",
+    "support.type.suggestion": "Suggestie / Feedback",
+    "support.type.other": "Anders",
+    "support.messageLabel": "Beschrijving",
+    "support.submit": "Verstuur Support E-mail",
 
     "meta.playPaceTitle": "Speel in je eigen tempo",
     "meta.playPaceText":
