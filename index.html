@@ -4,114 +4,246 @@
   <meta charset="UTF-8" />
   <title>ZILDA Factory – Idle Factory Tycoon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ZILDA Factory is a fast-paced idle factory tycoon game. Build machines, automate production and climb the global leaderboard." />
+  <meta
+    name="description"
+    content="ZILDA Factory is a fast-paced idle factory tycoon game. Build machines, automate production and climb the global leaderboard."
+  />
   <link rel="stylesheet" href="styles.css" />
   <script type="module" src="js/app.js" defer></script>
 </head>
 <body>
   <header class="top-nav">
-    <div class="logo">ZILDA Factory</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
+    <div class="logo" data-i18n="nav.logo">ZILDA Factory</div>
+    <nav class="nav-right">
+      <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+      <a href="#gameplay" data-i18n="nav.gameplay">Gameplay</a>
+      <a href="#progression" data-i18n="nav.progression">Progression</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      <div class="toolbar">
+        <div class="lang-switch" id="langSwitch" aria-label="Language">
+          <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="nl">NL</button>
+        </div>
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          ☾
+        </button>
+      </div>
     </nav>
   </header>
 
   <main id="app">
     <!-- Hero -->
-    <section class="hero">
-      <div class="hero-text">
+    <section class="hero reveal-on-scroll">
+      <div class="hero-text hero-column">
+        <div class="badge-row">
+          <span class="pill pill-idle" data-i18n="hero.badgeIdle">Idle factory tycoon</span>
+          <span class="pill pill-offline" data-i18n="hero.badgeOffline">Offline progress</span>
+          <span class="pill pill-fair" data-i18n="hero.badgeFair">No pay‑to‑win</span>
+        </div>
+
         <h1 data-bind="text: gameTitle"></h1>
-        <p class="tagline" data-bind="text: gameTagline"></p>
-        <p class="muted" data-bind="text: gameShortDescription"></p>
+        <p class="tagline" data-bind="text: gameTagline" data-i18n="hero.tagline"></p>
+        <p class="muted" data-bind="text: gameShortDescription" data-i18n="hero.shortDescription"></p>
+
+        <div class="hero-meta">
+          <div class="rating">
+            <div class="rating-stars">★★★★★</div>
+            <p class="muted small" data-i18n="hero.designedFor">Designed for long‑term idle players</p>
+          </div>
+          <div class="hero-meta-item">
+            <span class="stat-label" data-i18n="hero.playtimeLabel">Playtime potential</span>
+            <span class="stat-value" data-i18n="hero.playtimeValue">100+ hours</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="stat-label" data-i18n="hero.playstyleLabel">Playstyle</span>
+            <span class="stat-value" data-i18n="hero.playstyleValue">Relaxed · Strategic · Offline‑friendly</span>
+          </div>
+        </div>
 
         <div class="store-buttons">
           <a class="btn primary" data-bind="href: playStoreUrl" target="_blank" rel="noopener">
-            Get it on Google Play
+            <span data-i18n="hero.ctaStore">Get it on Google Play</span>
           </a>
           <button class="btn ghost" data-action="toggleVideo">
-            Watch trailer
+            <span data-i18n="hero.ctaTrailer">Watch trailer</span>
           </button>
         </div>
 
         <ul class="hero-stats">
           <li>
-            <span class="stat-label">Machines</span>
+            <span class="stat-label" data-i18n="hero.machinesLabel">Machines</span>
             <span class="stat-value" data-bind="text: machineCount"></span>
           </li>
           <li>
-            <span class="stat-label">Clothing tiers</span>
+            <span class="stat-label" data-i18n="hero.tiersLabel">Clothing tiers</span>
             <span class="stat-value" data-bind="text: clothingTierCount"></span>
           </li>
           <li>
-            <span class="stat-label">Prestige</span>
+            <span class="stat-label" data-i18n="hero.prestigeLabel">Prestige currency</span>
             <span class="stat-value">Fashion Points</span>
           </li>
         </ul>
       </div>
 
       <div class="hero-media">
+        <div class="phone-glow"></div>
         <div class="phone-frame" id="screenCarousel">
           <!-- Screenshots worden via JS erin gezet -->
         </div>
-        <p class="muted center">Actual in-game screenshots</p>
+        <p class="muted center" data-i18n="hero.screenshotsLabel">Actual in-game screenshots</p>
+        <p class="muted center extra-note small" data-i18n="hero.note">
+          UI and balancing are still being tuned – feedback is welcome!
+        </p>
       </div>
     </section>
 
-    <!-- Features -->
-    <section class="section">
-      <h2>Why you'll get addicted</h2>
-      <div class="cards" id="featureList">
+    <!-- Gameplay / Features -->
+    <section class="section reveal-on-scroll" id="gameplay">
+      <header class="section-header">
+        <h2 data-i18n="features.title">Why you'll get addicted</h2>
+        <p class="muted" data-i18n="features.lead">
+          ZILDA Factory is built for people who love deep idle games – not just
+          5 minutes of tapping. Plan, optimize and prestige for massive rewards.
+        </p>
+      </header>
+
+      <div class="hero-steps">
+        <article class="step-card">
+          <span class="step-number">1</span>
+          <h3 data-i18n="steps.1.title">Build your factory</h3>
+          <p data-i18n="steps.1.text">
+            Unlock machines, upgrade them and keep your production lines flowing 24/7.
+          </p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">2</span>
+          <h3 data-i18n="steps.2.title">Optimize & automate</h3>
+          <p data-i18n="steps.2.text">
+            Balance costs, upgrade routes and timing boosts to squeeze every Fashion Point.
+          </p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">3</span>
+          <h3 data-i18n="steps.3.title">Prestige & climb</h3>
+          <p data-i18n="steps.3.text">
+            Reset for huge permanent bonuses and race other players on the leaderboards.
+          </p>
+        </article>
+      </div>
+
+      <div class="cards reveal-on-scroll" id="featureList">
         <!-- Feature cards via JS -->
       </div>
     </section>
 
     <!-- Progression -->
-    <section class="section alt">
-      <h2>Deep progression, not a 5-minute game</h2>
+    <section class="section alt reveal-on-scroll" id="progression">
+      <header class="section-header">
+        <h2 data-i18n="progression.title">Deep progression, not a 5-minute game</h2>
+        <p class="muted" data-i18n="progression.lead">
+          Costs grow super-exponential, and late‑game is all about timing your
+          boosts, research and prestige loops. There is always another layer to unlock.
+        </p>
+      </header>
+
       <div class="progression-grid">
         <article class="card">
-          <h3>Smart balancing</h3>
-          <p>
+          <h3 data-i18n="progression.smartTitle">Smart balancing</h3>
+          <p data-i18n="progression.smartText">
             Costs grow super-exponential. You won’t max everything in 5 minutes.
             Late-game focuses on planning and timing your boosts.
           </p>
         </article>
         <article class="card">
-          <h3>Research & Shop</h3>
-          <p>
+          <h3 data-i18n="progression.researchTitle">Research & Shop</h3>
+          <p data-i18n="progression.researchText">
             Spend Fashion Points on permanent upgrades, time warps and cosmetics.
             No pay-to-win: skill and planning still matter.
           </p>
         </article>
         <article class="card">
-          <h3>Leaderboards</h3>
-          <p>
+          <h3 data-i18n="progression.leaderboardsTitle">Leaderboards</h3>
+          <p data-i18n="progression.leaderboardsText">
             Firebase-powered online rankings. Compete on Fashion Points
             and see how your factory compares globally.
+          </p>
+        </article>
+      </div>
+
+      <div class="meta-grid">
+        <article class="meta-card">
+          <h3 data-i18n="meta.playPaceTitle">Play at your own pace</h3>
+          <p data-i18n="meta.playPaceText">
+            Log in a few times a day or min‑max every second – the game supports both playstyles.
+          </p>
+        </article>
+        <article class="meta-card">
+          <h3 data-i18n="meta.newPlayersTitle">Friendly to new idle players</h3>
+          <p data-i18n="meta.newPlayersText">
+            Tooltips and clear numbers help you understand what each upgrade does.
+          </p>
+        </article>
+        <article class="meta-card">
+          <h3 data-i18n="meta.soloDevTitle">Made by a solo dev</h3>
+          <p data-i18n="meta.soloDevText">
+            Your feedback directly shapes future updates, events and balancing tweaks.
           </p>
         </article>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section class="section">
-      <h2>FAQ</h2>
+    <section class="section reveal-on-scroll" id="faq">
+      <h2 data-i18n="faq.title">FAQ</h2>
       <details class="faq">
-        <summary>Is ZILDA Factory free?</summary>
-        <p>Yes. The game is free to download. Optional in-game purchases are cosmetic or give small boosts.</p>
+        <summary data-i18n="faq.q1">Is ZILDA Factory free?</summary>
+        <p data-i18n="faq.a1">
+          Yes. The game is free to download. Optional in-game purchases are cosmetic or give small boosts.
+        </p>
       </details>
       <details class="faq">
-        <summary>Do I need an internet connection?</summary>
-        <p>You can play offline. Online connection is needed only for leaderboards and cloud save.</p>
+        <summary data-i18n="faq.q2">Do I need an internet connection?</summary>
+        <p data-i18n="faq.a2">
+          You can play offline. Online connection is needed only for leaderboards and cloud save.
+        </p>
       </details>
       <details class="faq">
-        <summary>Is my progress saved?</summary>
-        <p>The game saves automatically on your device. If you choose, cloud save can sync across devices.</p>
+        <summary data-i18n="faq.q3">Is my progress saved?</summary>
+        <p data-i18n="faq.a3">
+          The game saves automatically on your device. If you choose, cloud save can sync across devices.
+        </p>
+      </details>
+      <details class="faq">
+        <summary data-i18n="faq.q4">Is there any pay-to-win?</summary>
+        <p data-i18n="faq.a4">
+          There are optional boosts, but the core progression is balanced for fair play. Skill and smart planning matter more than spending.
+        </p>
+      </details>
+      <details class="faq">
+        <summary data-i18n="faq.q5">Which platforms are supported?</summary>
+        <p data-i18n="faq.a5">
+          Right now ZILDA Factory is being prepared for Google Play on Android. Other platforms may follow later.
+        </p>
       </details>
     </section>
   </main>
+
+  <!-- Trailer modal -->
+  <div class="modal hidden" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop" data-action="closeModal"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Game trailer">
+      <button class="icon-btn modal-close" type="button" data-action="closeModal" aria-label="Close trailer">✕</button>
+      <div class="modal-body">
+        <div class="video-embed" id="videoEmbed" data-video-id="">
+          <p class="muted center">
+            Trailer coming soon. Once available, this will show the official ZILDA Factory trailer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <small>
