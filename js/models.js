@@ -43,7 +43,7 @@ export class GameInfoModel {
 
 export class SupportModel {
   constructor() {
-    this.supportEmail = "support@zildagames.com"; // kun je zelf aanpassen
+    this.supportEmail = "zildagames2025@gmail.com";
   }
 }
 
