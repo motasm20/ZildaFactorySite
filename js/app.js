@@ -103,7 +103,11 @@ class SupportViewModel {
   }
 }
 
-// ---------- Shared footer year ----------
+// ---------- Shared layout & footer year ----------
+
+if (typeof renderLayout === "function") {
+  renderLayout();
+}
 
 const yearSpans = document.querySelectorAll("#year");
 yearSpans.forEach((el) => (el.textContent = new Date().getFullYear()));
@@ -119,6 +123,8 @@ const I18N = {
     "nav.faq": "FAQ",
     "nav.support": "Support",
     "nav.privacy": "Privacy",
+    "nav.about": "About",
+    "nav.roadmap": "Roadmap",
 
     "hero.badgeIdle": "Idle factory tycoon",
     "hero.badgeOffline": "Offline progress",
@@ -214,6 +220,8 @@ const I18N = {
     "nav.faq": "FAQ",
     "nav.support": "Support",
     "nav.privacy": "Privacy",
+    "nav.about": "Over",
+    "nav.roadmap": "Roadmap",
 
     "hero.badgeIdle": "Idle fabriek tycoon",
     "hero.badgeOffline": "Offline voortgang",
