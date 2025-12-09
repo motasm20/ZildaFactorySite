@@ -1,60 +1,105 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ZILDA Factory – Account en gegevens verwijderen</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 800px; margin: 0 auto; padding: 24px; line-height: 1.6; }
-    h1 { font-size: 1.8rem; margin-bottom: .5rem; }
-    h2 { margin-top: 1.5rem; }
-    code { background:#f3f4f6; padding:2px 4px; border-radius:3px; }
-  </style>
+  <meta charset="UTF-8" />
+  <title>ZILDA Factory – Account & Data Deletion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="How to request deletion of your ZILDA Factory game account and associated data." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Account en gegevens verwijderen – ZILDA Factory</h1>
 
-  <p>
-    Deze pagina legt uit hoe je je <strong>ZILDA Factory</strong>-account en de bijbehorende gegevens kunt laten verwijderen.
-    ZILDA Factory gebruikt Google Play Games / Google-login (OAuth) voor het aanmaken van een account.
-  </p>
+  <!-- Navigation (zelfde stijl als de rest) -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">ZILDA <span>FACTORY</span></a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </nav>
 
-  <h2>Welke gegevens worden opgeslagen?</h2>
-  <ul>
-    <li>Een interne gebruikers-ID (gekoppeld aan je Google-account of Play Games-profiel)</li>
-    <li>Je voortgang in het spel (level, machines, valuta, enz.)</li>
-    <li>In-game aankopen en ontgrendelde items</li>
-  </ul>
+  <main class="section">
+    <div class="container">
+      <h1>Account & Data Deletion</h1>
 
-  <h2>Account en gegevens laten verwijderen</h2>
-  <p>
-    Wil je dat je <strong>spelaccount en alle bijbehorende gegevens</strong> worden verwijderd, stuur dan een e-mail naar:
-  </p>
-  <p>
-    <strong>E-mail:</strong> <a href="mailto:ZildaGames2025@gmail.com">SUPPORT_EMAIL_HIER</a>
-  </p>
-  <p>Vermeld in je e-mail:</p>
-  <ul>
-    <li>Dat je je ZILDA Factory-account wilt verwijderen</li>
-    <li>Het Google-account waarmee je inlogt (bijv. je Gmail-adres)</li>
-    <li>Optioneel: een screenshot van je in-game profiel/ID</li>
-  </ul>
+      <p>
+        This page explains how you can request deletion of your
+        <strong>ZILDA Factory</strong> game account and all associated data.
+      </p>
 
-  <p>
-    Nadat we je verzoek hebben ontvangen, verwijderen we je spelgegevens binnen <strong>30 dagen</strong>.
-    Dit omvat je spelvoortgang, in-game valuta en gekoppelde spel-ID in onze database.
-  </p>
+      <h2>What data do we store?</h2>
+      <p>ZILDA Factory uses Google Play Games / Google sign-in (OAuth). We do not store passwords.</p>
+      <p>We may store the following game-related data:</p>
+      <ul>
+        <li>An internal user ID linked to your Google / Play Games profile</li>
+        <li>Your game progress (machines, tiers, currencies, achievements)</li>
+        <li>In-game purchases and unlocked items</li>
+      </ul>
 
-  <h2>Belangrijk</h2>
-  <ul>
-    <li>Het verwijderen van je spelaccount verwijdert <strong>niet</strong> je Google-account zelf.</li>
-    <li>Voor het beheren of verwijderen van je Google-account kun je terecht op de officiële Google-pagina's.</li>
-  </ul>
+      <h2>How to request deletion</h2>
+      <p>
+        If you want your <strong>game account and all related data</strong> to be deleted,
+        please send an email to:
+      </p>
 
-  <h2>Vragen</h2>
-  <p>
-    Heb je vragen over je gegevens of deze procedure? Neem dan contact met ons op via
-    <a href="mailto:ZildaGames2025@gmail.com">SUPPORT_EMAIL_HIER</a>.
-  </p>
+      <p style="font-weight:bold;">
+        E-mail:
+        <a href="mailto:ZildaGames2025@gmail.com">SUPPORT_EMAIL_HIER</a>
+      </p>
+
+      <p>In your email, please include:</p>
+      <ul>
+        <li>A short message that you want to delete your ZILDA Factory account</li>
+        <li>The Google account you use to sign in (for example your Gmail address)</li>
+        <li>Optionally: a screenshot of your in-game profile / ID</li>
+      </ul>
+
+      <p>
+        After receiving your request, we will delete your game data within
+        <strong>30 days</strong>. This includes your game progress, in-game currencies
+        and internal user ID.
+      </p>
+
+      <h2>Important</h2>
+      <ul>
+        <li>
+          Deleting your ZILDA Factory game account does <strong>not</strong> delete
+          your Google account itself.
+        </li>
+        <li>
+          To manage or delete your Google account, please use Google's official
+          account management pages.
+        </li>
+      </ul>
+
+      <h2>Questions</h2>
+      <p>
+        If you have any questions about your data or this process, contact us at
+        <a href="mailto:ZildaGames2025@gmail.com">SUPPORT_EMAIL_HIER</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo" style="font-size: 1.2rem;">ZILDA <span>FACTORY</span></div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+        <a href="account-deletion.html">Account deletion</a>
+        <span style="color: var(--text-muted);">© <span id="year"></span> ZILDA Games</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // jaar in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
