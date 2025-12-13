@@ -11,9 +11,12 @@ export class GameInfoModel {
     this.clothingTierCount = 9;
 
     this.screenshots = [
+      "media/screen0.png",
       "media/screen1.png",
       "media/screen2.png",
-      "media/screen3.png"
+      "media/screen3.png",
+      "media/screen4.png",
+      "media/screen5.png"
     ];
 
     this.features = [
